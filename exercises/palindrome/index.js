@@ -7,6 +7,15 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+  reversed = str.split('').reverse().join('')
+  // we want to compare the reversed string to the original string
+  if (reversed === str){
+    return true
+  } else{
+    return false
+  }
+}
 
+palindrome('yooy')
 module.exports = palindrome;
